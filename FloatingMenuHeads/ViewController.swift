@@ -19,6 +19,12 @@ class ViewController: UIViewController {
         super.didReceiveMemoryWarning()
         // Dispose of any resources that can be recreated.
     }
+    
+    @IBAction func menuButton(sender: AnyObject) {
+        let controller = FloatingMenuController(fromView: sender as! UIButton)
+        presentViewController(controller, animated: true, completion: nil)
+    }
+    
 
 
 }

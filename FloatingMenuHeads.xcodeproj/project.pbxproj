@@ -10,9 +10,12 @@
 		29CB695A1C0643A300370DA0 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 29CB69591C0643A300370DA0 /* AppDelegate.swift */; };
 		29CB695C1C0643A300370DA0 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 29CB695B1C0643A300370DA0 /* ViewController.swift */; };
 		29CB695F1C0643A300370DA0 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 29CB695D1C0643A300370DA0 /* Main.storyboard */; };
-		29CB69611C0643A300370DA0 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 29CB69601C0643A300370DA0 /* Assets.xcassets */; };
 		29CB69641C0643A300370DA0 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 29CB69621C0643A300370DA0 /* LaunchScreen.storyboard */; };
 		29CB696F1C0643A300370DA0 /* FloatingMenuHeadsTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 29CB696E1C0643A300370DA0 /* FloatingMenuHeadsTests.swift */; };
+		29CB697A1C06441400370DA0 /* Floating-Heads.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 29CB69791C06441400370DA0 /* Floating-Heads.xcassets */; settings = {ASSET_TAGS = (); }; };
+		29CB697E1C06476600370DA0 /* UIColor+FloatingMenuHeads.swift in Sources */ = {isa = PBXBuildFile; fileRef = 29CB697D1C06476600370DA0 /* UIColor+FloatingMenuHeads.swift */; settings = {ASSET_TAGS = (); }; };
+		29CB69801C06492600370DA0 /* FloatingMenuButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 29CB697F1C06492600370DA0 /* FloatingMenuButton.swift */; settings = {ASSET_TAGS = (); }; };
+		29CB69821C064ED700370DA0 /* FloatingMenuController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 29CB69811C064ED700370DA0 /* FloatingMenuController.swift */; settings = {ASSET_TAGS = (); }; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -30,12 +33,15 @@
 		29CB69591C0643A300370DA0 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		29CB695B1C0643A300370DA0 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 		29CB695E1C0643A300370DA0 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
-		29CB69601C0643A300370DA0 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		29CB69631C0643A300370DA0 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		29CB69651C0643A300370DA0 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		29CB696A1C0643A300370DA0 /* FloatingMenuHeadsTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = FloatingMenuHeadsTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		29CB696E1C0643A300370DA0 /* FloatingMenuHeadsTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FloatingMenuHeadsTests.swift; sourceTree = "<group>"; };
 		29CB69701C0643A300370DA0 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		29CB69791C06441400370DA0 /* Floating-Heads.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; name = "Floating-Heads.xcassets"; path = "../../../Downloads/iOS-W6-Design-Assets-master-2/Floating-Heads.xcassets"; sourceTree = "<group>"; };
+		29CB697D1C06476600370DA0 /* UIColor+FloatingMenuHeads.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "UIColor+FloatingMenuHeads.swift"; sourceTree = "<group>"; };
+		29CB697F1C06492600370DA0 /* FloatingMenuButton.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FloatingMenuButton.swift; sourceTree = "<group>"; };
+		29CB69811C064ED700370DA0 /* FloatingMenuController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FloatingMenuController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -80,7 +86,10 @@
 				29CB69591C0643A300370DA0 /* AppDelegate.swift */,
 				29CB695B1C0643A300370DA0 /* ViewController.swift */,
 				29CB695D1C0643A300370DA0 /* Main.storyboard */,
-				29CB69601C0643A300370DA0 /* Assets.xcassets */,
+				29CB69811C064ED700370DA0 /* FloatingMenuController.swift */,
+				29CB697F1C06492600370DA0 /* FloatingMenuButton.swift */,
+				29CB697D1C06476600370DA0 /* UIColor+FloatingMenuHeads.swift */,
+				29CB69791C06441400370DA0 /* Floating-Heads.xcassets */,
 				29CB69621C0643A300370DA0 /* LaunchScreen.storyboard */,
 				29CB69651C0643A300370DA0 /* Info.plist */,
 			);
@@ -179,7 +188,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				29CB69641C0643A300370DA0 /* LaunchScreen.storyboard in Resources */,
-				29CB69611C0643A300370DA0 /* Assets.xcassets in Resources */,
+				29CB697A1C06441400370DA0 /* Floating-Heads.xcassets in Resources */,
 				29CB695F1C0643A300370DA0 /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -198,7 +207,10 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				29CB69801C06492600370DA0 /* FloatingMenuButton.swift in Sources */,
+				29CB697E1C06476600370DA0 /* UIColor+FloatingMenuHeads.swift in Sources */,
 				29CB695C1C0643A300370DA0 /* ViewController.swift in Sources */,
+				29CB69821C064ED700370DA0 /* FloatingMenuController.swift in Sources */,
 				29CB695A1C0643A300370DA0 /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
