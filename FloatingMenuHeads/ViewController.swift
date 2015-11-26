@@ -8,11 +8,18 @@
 
 import UIKit
 
-class ViewController: UIViewController {
 
+
+
+var delegate: FloatingMenuControllerDelegate?
+
+
+class ViewController: UIViewController, FloatingMenuControllerDelegate {
+    
     override func viewDidLoad() {
         super.viewDidLoad()
-        // Do any additional setup after loading the view, typically from a nib.
+        
+        
     }
 
     override func didReceiveMemoryWarning() {
@@ -22,10 +29,36 @@ class ViewController: UIViewController {
     
     @IBAction func menuButton(sender: AnyObject) {
         let controller = FloatingMenuController(fromView: sender as! UIButton)
+
+        
+        
+        controller.buttonItems = [
+            FloatingMenuButton(image: UIImage(named: "icon-add")),
+            FloatingMenuButton(image: UIImage(named: "model-008")),
+            FloatingMenuButton(image: UIImage(named: "model-007")),
+            FloatingMenuButton(image: UIImage(named: "model-004")),
+            FloatingMenuButton(image: UIImage(named: "model-005")),
+        ]
+        
+        controller.labelTitles = [
+            "New Contact",
+            "Heidi Hernandez",
+            "Neil Ross",
+            "Elijah Woods",
+            "Bella Douglas"
+        ]
         presentViewController(controller, animated: true, completion: nil)
     }
     
-
+    
+    // MARK: FloatingMenuControllerDelegate
+    
+    func floatingMenuController(controller: FloatingMenuController, didTapOnButton button: UIButton, atIndex index: Int) {
+        print("tapped index \(index)")
+        controller.dismissViewControllerAnimated(true, completion: nil)
+    }
 
 }
+
+
 
